@@ -3,7 +3,8 @@
 Deploy Operator only
 
 ```bash
-helm upgrade --install grafana . --set operator=true
+oc apply -f operator-namespace.yaml
+helm upgrade --install grafana . --set operator=true --namespace openshift-grafana
 ```
 
 Cluster scoped grafana
