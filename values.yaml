@@ -1,0 +1,6 @@
+# deploy operator only
+operator: false
+# override in argo
+ignoreHelmHooks: false
+# cluster-9091, namespaced-9092
+thanosClusterScoped: true
