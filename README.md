@@ -15,5 +15,5 @@ helm upgrade --install grafana . --namespace grafana --create-namespace
 Namespaced scoped grafana
 
 ```bash
-helm upgrade --install grafana . --namespace grafana --set thanosClusterScoped=false
+helm upgrade --install grafana . --namespace grafana --create-namespace --set thanosClusterScoped=false
 ```
